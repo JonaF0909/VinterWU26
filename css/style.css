@@ -1,1 +1,70 @@
-/* Här skrivs all din CSS */
+#wrapper{
+    padding-left: 9vh;
+    grid-template-columns: 20% 1fr 10%;
+    grid-template-rows: 0.4fr 0.3fr 2fr 2fr 1fr;
+    display: grid;
+    height: 300vh;
+    width:180vh;
+    gap: 1rem;
+    background-color: black;
+    grid-template-areas:
+    'hd hd'
+    'nv nv'
+    'as mn'
+    'as st'
+    'ft ft';
+}
+header{
+    grid-area: hd;
+    background-color: rgba(65, 139, 99, 1);
+    color: rgba(34, 34, 34, 1);;
+    text-align: center;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav{
+    grid-area: nv;
+    background-color: rgba(34, 34, 34, 1);
+    color: rgba(65, 139, 99, 1);
+    text-align: center;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+
+}
+nav a {
+    color: rgba(65, 139, 99, 1);
+    background-color: rgba(34, 34, 34, 1);
+    width: 80px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border:5px solid rgba(65, 139, 99, 1);
+    
+}nav a:hover{
+    color: whitesmoke;
+ }
+aside{
+    grid-area: as;
+    background-color: grey;
+}
+main{
+    grid-area: mn;
+    background-color: rgba(65, 139, 99, 1);
+}
+section{
+    grid-area: st;
+    background-color: rgba(65, 139, 99, 1);
+}
+footer{
+    grid-area: ft;
+    background-color: (34, 34, 34, 1);
+}
+body{
+    background-color: black;
+}
